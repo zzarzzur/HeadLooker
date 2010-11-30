@@ -12,15 +12,15 @@ void setup()
     heads[0] = new Head("gd");
 
     // create heads array
-    int headw = width / numx;
+    int headw = width  / numx;
     int heady = height / numy;
     int headid = 0;
     for (int y = 0; y < numy; y++) {    
         for (int x = 0; x < numx; x++) {            
             heads[headid].x = (x * headw) + headw / 2;
             heads[headid].y = (y * heady) + heady / 2;
-            heads[headid].w = width / numx;
-            heads[headid].h = height / numy;
+            heads[headid].w = 200;
+            heads[headid].h = 200;
             headid++;
         } 
     }
